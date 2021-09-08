@@ -187,13 +187,13 @@ body{
 }
 
 .text a{
-    text-decoration: none;
-    color: darkgray;
+    text-decoration: underline;
+    color: crimson;
     transition: .2s ease;
 }
 
 .text a:hover{
-    color: #484848;
+    color: darkgray;
 }
 
 .col-right{
