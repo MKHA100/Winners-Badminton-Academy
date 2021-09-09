@@ -38,7 +38,7 @@ body{
   }
   @media only screen and (max-width:650px) {
     nav{
-      background-color: transparent;
+      background-color: rgb(114, 57, 57) !important;
       height: 80px;
       width: 100%;
       position: fixed;
