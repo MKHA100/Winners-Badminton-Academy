@@ -276,7 +276,8 @@ body{
     }
 
     .col-right{
-        width: 80%;
+        width: 100px;
+        height: 100px;
     }
     
     .error{
