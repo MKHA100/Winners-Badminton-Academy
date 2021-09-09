@@ -271,8 +271,9 @@ body{
         font-size: 4rem;
     }   
 
-    .col-left{
-        width: 80%;
+     .col-right{
+        width: 100px;
+        height: 100px;
     }
 
     .col-right{
