@@ -1,6 +1,15 @@
 body {
   margin: 0;
 }
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.favicon {
+  border-radius: 50%;
+}
 .navbar-fixed-top.scrolled {
   background-color: rgb(114, 57, 57) !important;
   transition: background-color 200ms linear;
@@ -9,15 +18,8 @@ nav {
   background-color: rgba(38, 35, 199, 0.897);
   height: 100px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1000;
-}
-
-.brandimg-nav img {
-  height: 80%;
-}
-.bar-item {
-  font-family: "Asap", sans-serif !important;
 }
 label.logo {
   color: rgb(141, 51, 51);
@@ -30,6 +32,10 @@ nav ul {
   margin-right: 100px;
 }
 
+.brandimg-nav img {
+  height: 80%;
+}
+
 nav ul li {
   display: inline-block;
   margin: 30px 10px;
@@ -37,13 +43,22 @@ nav ul li {
 }
 @media only screen and (max-width: 650px) {
   nav {
-    background-color: transparent;
     height: 80px;
     width: 100%;
     position: fixed;
     z-index: 1000;
   }
 }
+@media only screen and (max-width: 1208px) {
+  nav ul {
+    margin-right: 10px;
+  }
+
+  nav ul li {
+    margin: 20px 5px;
+  }
+}
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -65,6 +80,7 @@ nav ul li a {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  margin-top: 3%;
   z-index: 100;
 }
 #check {
@@ -86,19 +102,27 @@ nav ul li a {
   ul {
     position: fixed;
     height: 100vh;
-    width: 100%;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    width: 25%;
     background: rgb(78, 23, 230);
     top: 0px;
     left: -100%;
     text-align: center;
-
     transition: all 0.5s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    ul {
+      width: 45%;
+    }
   }
   nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
-    margin-left: 230px;
+    /* margin-left: 230px; */
   }
   nav ul li a {
     font-size: 20px;
@@ -109,13 +133,13 @@ nav ul li a {
     color: rgb(179, 212, 228) !important ;
   }
   #check:checked ~ ul {
-    left: -60%;
+    left: 0%;
   }
 }
 @media only screen and (min-width: 869px) {
   .brandimg {
-    width: 8%;
-    margin: 5px 70px;
+    width: 12%;
+    margin: 10px 70px;
   }
 }
 @media only screen and (max-width: 868px) {
@@ -124,9 +148,23 @@ nav ul li a {
     margin: 5px 70px;
   }
 }
+@media only screen and (max-width: 620px) {
+  .brandimg {
+    width: 20%;
+    margin: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .brandimg {
+    width: 20%;
+    margin: 20px 30px;
+  }
+}
 
 .error-meessage-container {
-  max-width: 1300px;
+  /* max-width: 1300px; */
+  width: 100%;
   font-family: "Nanum Myeongjo", serif;
   align-items: center;
   display: flex;
@@ -139,7 +177,7 @@ nav ul li a {
   align-items: center;
   text-align: left;
   width: 50%;
-  padding-right: 50px;
+  padding-left: 50px;
   font-family: "Roboto Slab", serif;
 }
 
@@ -206,7 +244,7 @@ nav ul li a {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .error-meessage-container {
     display: flex;
     flex-direction: column-reverse;
